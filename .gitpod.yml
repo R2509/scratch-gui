@@ -12,3 +12,4 @@ additionalRepositories:
 tasks:
   - name: scratch-gui
     command: npm install
+workspaceLocation: scratch-gui/main.code-workspace
