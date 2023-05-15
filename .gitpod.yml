@@ -6,20 +6,44 @@
 
 additionalRepositories:
   - url: https://github.com/R2509/scratch-vm
-    # checkoutLocation is relative to /workspaces
     checkoutLocation: scratch-vm
+  - url: https://github.com/R2509/scratch-blocks
+    checkoutLocation: scratch-blocks
 
 tasks:
-  - name: scratch-gui
+  - name: npm
     command: |
-      nvm install 16 && sync-done nvm
-      nvm use 16
+      nvm install 16 && nvm use 16
+      cd ../scratch-gui
       npm install
-      npm run watch
+      cd ../scratch-vm
+      npm install
+      cd ../scratch-blocks
+      npm install
+      echo "Dependency installation complete!"
+      clear; npm link
+      cd ../scratch-gui
+      npm link scratch-blocks
+
+      cd ../scratch-vm
+      clear; npm link
+      cd ../scratch-gui
+      npm link scratch-blocks
+
+      gp sync-done npm-things
+
+      echo "Local dependency linking complete!"
   - name: scratch-vm
     command: |
-      gp sync-await nvm
+      gp sync-await npm-things
+      cd ../scratch-vm
       nvm use 16
-      npm install
+      npm run build
+      gp sync-done vm-build
       npm run watch
+  - name: scratch-gui
+    command: |
+      gp sync-await vm-build
+      npm run build
+      npm start
 workspaceLocation: scratch-gui/main.code-workspace

@@ -1,9 +1,9 @@
 $theme-hue-main: 250;
 $lightness: 75%;
 
-$ui-primary: hsla($theme-hue-main, 100%, 85%, 1); /* #E5F0FF */
-$ui-secondary: hsla($theme-hue-main, 75%, 85%, 1); /* #E9F1FC */
-$ui-tertiary: hsla($theme-hue-main, 50%, 50%, 1); /* #D9E3F2 */
+$ui-primary: hsla($theme-hue-main, 100%, 95%, 1); /* #E5F0FF */
+$ui-secondary: hsla($theme-hue-main, 75%, 95%, 1); /* #E9F1FC */
+$ui-tertiary: hsla($theme-hue-main, 50%, 90%, 1); /* #D9E3F2 */
 
 $ui-modal-overlay: hsla(215, 100%, 65%, 0.9); /* 90% transparent version of theme-primary */
 
