@@ -14,9 +14,9 @@ $ui-black-transparent: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of blac
 $text-primary: hsla(225, 15%, 40%, 1); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
-$motion-primary: hsla(215, 100%, 65%, 1); /* #4C97FF */
-$motion-tertiary: hsla(215, 60%, 50%, 1); /* #3373CC */
-$motion-transparent: hsla(215, 100%, 65%, 0.35); /* 35% transparent version of motion-primary */
+$motion-primary: hsla(240, 100%, 65%, 1); /* #4C97FF */
+$motion-tertiary: hsla(240, 60%, 50%, 1); /* #3373CC */
+$motion-transparent: hsla(240, 100%, 65%, 0.35); /* 35% transparent version of motion-primary */
 $motion-light-transparent: hsla(215, 100%, 65%, 0.15); /* 15% transparent version of motion-primary */
 
 $red-primary: hsla(20, 100%, 55%, 1); /* #FF661A */
@@ -42,3 +42,11 @@ $extensions-transparent: hsla(163, 85%, 40%, 0.35); /* 35% transparent version o
 $extensions-light: hsla(163, 57%, 85%, 1); /* opaque version of extensions-transparent, on white bg */
 
 $drop-highlight: hsla(215, 100%, 77%, 1); /* lighter than motion-primary */
+
+$theme-hue-blue: 100;
+$lightness: 75%;
+
+$theme-primary: hsla($theme-hue-blue, 100%, $lightness, 1); /* #4C97FF */
+$theme-tertiary: hsla($theme-hue-blue, 60%, $lightness, 1); /* #3373CC */
+$theme-transparent: hsla($theme-hue-blue, 100%, $lightness, 0.35); /* 35% transparent version of motion-primary */
+$theme-light-transparent: hsla($theme-hue-blue, 100%, $lightness, 0.15); /* 15% transparent version of motion-primary */

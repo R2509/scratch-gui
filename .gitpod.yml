@@ -11,5 +11,15 @@ additionalRepositories:
 
 tasks:
   - name: scratch-gui
-    command: npm install
+    command: |
+      nvm install 16 && sync-done nvm
+      nvm use 16
+      npm install
+      npm run watch
+  - name: scratch-vm
+    command: |
+      gp sync-await nvm
+      nvm use 16
+      npm install
+      npm run watch
 workspaceLocation: scratch-gui/main.code-workspace
