@@ -12,7 +12,7 @@ import AppStateHOC from '../lib/app-state-hoc.jsx';
 import BrowserModalComponent from '../components/browser-modal/browser-modal.jsx';
 import supportedBrowser from '../lib/supported-browser';
 
-import styles from './index.css';
+import styles from 'index.scss';
 
 // Register "base" page view
 analytics.pageview('/');

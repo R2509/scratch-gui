@@ -11,7 +11,7 @@ import LargeMonitor from './large-monitor.jsx';
 import SliderMonitor from '../../containers/slider-monitor.jsx';
 import ListMonitor from '../../containers/list-monitor.jsx';
 
-import styles from './monitor.css';
+import styles from 'monitor.scss';
 
 const categories = {
     data: '#FF8C1A',

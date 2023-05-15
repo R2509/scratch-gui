@@ -1,0 +1,10 @@
+@import "../../css/colors.scss";
+
+.share-button {
+    background: $data-primary;
+}
+
+.share-button-is-shared {
+    background: $ui-black-transparent;
+    cursor: default;
+}

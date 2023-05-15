@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './monitor.css';
+import styles from 'monitor.scss';
 
 const LargeMonitor = ({categoryColor, value}) => (
     <div className={styles.largeMonitor}>
