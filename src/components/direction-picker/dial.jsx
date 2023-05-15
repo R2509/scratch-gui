@@ -3,7 +3,7 @@ import bindAll from 'lodash.bindall';
 import React from 'react';
 import {getEventXY} from '../../lib/touch-utils';
 
-import styles from 'dial.scss';
+import styles from './dial.css';
 
 import dialFace from './icon--dial.svg';
 import dialHandle from './icon--handle.svg';

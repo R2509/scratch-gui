@@ -12,7 +12,7 @@ import ConnectedStep from './connected-step.jsx';
 import ErrorStep from './error-step.jsx';
 import UnavailableStep from './unavailable-step.jsx';
 
-import styles from 'connection-modal.scss';
+import styles from './connection-modal.css';
 
 const PHASES = keyMirror({
     scanning: null,

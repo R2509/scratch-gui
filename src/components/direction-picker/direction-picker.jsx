@@ -9,7 +9,7 @@ import Input from '../forms/input.jsx';
 import BufferedInputHOC from '../forms/buffered-input-hoc.jsx';
 import Dial from './dial.jsx';
 
-import styles from 'direction-picker.scss';
+import styles from './direction-picker.css';
 
 import allAroundIcon from './icon--all-around.svg';
 import leftRightIcon from './icon--left-right.svg';

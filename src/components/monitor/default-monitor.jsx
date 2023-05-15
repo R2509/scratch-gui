@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from 'monitor.scss';
+import styles from './monitor.css';
 
 const DefaultMonitor = ({categoryColor, label, value}) => (
     <div className={styles.defaultMonitor}>

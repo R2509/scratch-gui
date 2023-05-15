@@ -11,7 +11,7 @@ import Filter from '../filter/filter.jsx';
 import TagButton from '../../containers/tag-button.jsx';
 import Spinner from '../spinner/spinner.jsx';
 
-import styles from 'library.scss';
+import styles from './library.css';
 
 const messages = defineMessages({
     filterPlaceholder: {

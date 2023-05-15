@@ -4,7 +4,7 @@ import React from 'react';
 
 import Box from '../box/box.jsx';
 import PlayButton from '../../containers/play-button.jsx';
-import styles from 'library-item.scss';
+import styles from './library-item.css';
 import classNames from 'classnames';
 
 import bluetoothIconURL from './bluetooth.svg';

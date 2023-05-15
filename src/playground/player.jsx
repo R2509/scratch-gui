@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production' && typeof window === 'object') {
     window.onbeforeunload = () => true;
 }
 
-import styles from 'player.scss';
+import styles from './player.css';
 
 const Player = ({isPlayerOnly, onSeeInside, projectId}) => (
     <Box className={classNames(isPlayerOnly ? styles.stageOnly : styles.editor)}>

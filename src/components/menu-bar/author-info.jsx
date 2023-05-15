@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import {FormattedMessage, injectIntl} from 'react-intl';
 import UserAvatar from './user-avatar.jsx';
 
-import styles from 'author-info.scss';
+import styles from './author-info.css';
 
 const AuthorInfo = ({
     className,

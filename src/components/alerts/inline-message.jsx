@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Spinner from '../spinner/spinner.jsx';
 import {AlertLevels} from '../../lib/alerts/index.jsx';
 
-import styles from 'inline-message.scss';
+import styles from './inline-message.css';
 
 const InlineMessageComponent = ({
     content,

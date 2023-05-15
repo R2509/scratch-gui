@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Button from '../button/button.jsx';
 
-import styles from 'share-button.scss';
+import styles from './share-button.css';
 
 const ShareButton = ({
     className,

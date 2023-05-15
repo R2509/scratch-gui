@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from 'spinner.scss';
+import styles from './spinner.css';
 
 const SpinnerComponent = function (props) {
     const {
