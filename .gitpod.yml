@@ -28,7 +28,7 @@ tasks:
       cd ../scratch-vm
       clear; npm link
       cd ../scratch-gui
-      npm link scratch-blocks
+      npm link scratch-vm
 
       gp sync-done npm-things
 
@@ -36,6 +36,12 @@ tasks:
   - name: scratch-vm
     command: |
       gp sync-await npm-things
+      pyenv install 2.7.18 && pyenv_version=2.7.18
+      npm install
+      gp sync-done blocks
+  - name: scratch-vm
+    command: |
+      gp sync-await blocks
       cd ../scratch-vm
       nvm use 16
       npm run build
